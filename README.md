@@ -1,4 +1,4 @@
-# Chef::Cooker
+# chef-cooker
 
 chef-cooker will be able to create cookbook of Chef easily. yay ;)
 
@@ -16,9 +16,10 @@ Or install it yourself as:
 
     $ gem install chef-cooker
 
-## Description
+## Usage
 
 Suppose if we want cookbook of `tree`
+
 chef-cooker does:
 
 1. `knife cookbook create tree --cookbook-path cookbooks`
@@ -39,10 +40,6 @@ Do you want to commit? [y/N] : y
  create mode 100644 cookbooks/tree/metadata.rb
  create mode 100644 cookbooks/tree/recipes/default.rb
 ```
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
