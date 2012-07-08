@@ -1,6 +1,6 @@
 # Chef::Cooker
 
-TODO: Write a gem description
+A tiny knife(chef-solo) wrapper.
 
 ## Installation
 
