@@ -4,8 +4,8 @@ require File.expand_path('../lib/chef-cooker/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Kohei Hasegawa"]
   gem.email         = ["ameutau@gmail.com"]
-  gem.description   = %q{A tiny knife(chef-solo) wrapper.}
-  gem.summary       = %q{A tiny knife(chef-solo) wrapper.}
+  gem.description   = %q{chef-cooker will be able to create cookbook of Chef easily. yay ;) }
+  gem.summary       = %q{chef-cooker will be able to create cookbook of Chef easily. yay ;) }
   gem.homepage      = "http://github.com/banyan/chef-cooker"
 
   gem.files         = `git ls-files`.split($\)
