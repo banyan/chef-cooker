@@ -15,25 +15,26 @@ module Chef
         add_and_commit_with_git
       end
 
+      private
       def generate_cookbook
         `bundle exec knife cookbook create #{cookbook} --cookbook-path cookbooks`
       end
 
       def append_package
-        if yes? "Do you want to append package to cookbooks/#{cookbook}/recipes/default.rb"
+        if yes? "Do you want to append package to cookbooks/#{cookbook}/recipes/default.rb? [y/N] :"
           append_file "cookbooks/#{cookbook}/recipes/default.rb", deindent(<<-EOS)
+
             package "#{cookbook}"
           EOS
         end
       end
 
       def add_and_commit_with_git
-        if yes? 'Do you want to commit'
+        if yes? 'Do you want to commit? [y/N] :'
           git add: "cookbooks/#{cookbook}", commit: "-m \"Add #{cookbook}\""
         end
       end
 
-      private
       # Run a command in git.
       #
       #   git :init
