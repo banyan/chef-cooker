@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'chef-cooker'
+
+Chef::Cooker::Generator.start
